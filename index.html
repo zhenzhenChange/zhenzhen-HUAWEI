@@ -1,0 +1,670 @@
+<!--
+    开始时间：2019/7/30
+    仿作对象：华为商城
+    进度：
+            2019/7/30 ---- header、nav
+            2019/7/31 ---- section
+            2019/8/01 ---- main > main_top
+            2019/8/02 ---- main > main_center , main > main_bottom , funny
+            2019/8/03 ---- footer
+            2019/8/04 ---- 优化整理
+    结束时间：2019/8/04
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>仿作华为商城</title>
+    <link rel="icon" href="images/华为标题logo.ico">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<header>
+    <div class="header_nav">
+        <div class="header_nav_left">
+            <ul class="header_nav_ul left">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">华为官网</a></li>
+                <li><a href="#">荣耀官网</a></li>
+                <li><a href="#">花粉俱乐部</a></li>
+                <li><a href="#">V码(优购码)</a></li>
+                <li><a href="#">企业购</a></li>
+                <li><a href="#">Select Region</a></li>
+                <li>
+                    <div class="more" id="more">
+                        <div class="more_h" id="more_a_hover">
+                            <a href="#">更多精彩</a>
+                        </div>
+                        <div class="more_b" id="more_hover">
+                            <ul>
+                                <li><a href="">EMUI</a></li>
+                                <li><a href="">应用市场</a></li>
+                                <li><a href="">华为终端云空间</a></li>
+                                <li><a href="">开发者联盟</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="header_nav_right">
+            <ul class="header_nav_ul right">
+                <li><a href="#">请登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#">我的订单</a></li>
+                <li><a href="#">客服服务</a></li>
+                <li><a href="#">网站导航</a></li>
+                <li><a href="#">手机版</a></li>
+                <li>
+                    <div class="cart">
+                        <div class="cart_h">
+                            <a href="#">购物车<span>(0)</span></a>
+                        </div>
+                        <div class="cart_b">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="nav_bar">
+        <div class="nav_bar_left">
+            <div class="logo">
+                <a href="#"><img src="images/华为商城.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#"><img src="images/华为专区.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/荣耀专区.png" alt=""></a></li>
+                    <li><a href="#">华为5G</a></li>
+                    <li><a href="#">荣耀20</a></li>
+                    <li><a href="#">华为P30</a></li>
+                    <li><a href="#">荣耀9X</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav_bar_right">
+            <div class="box">
+                <input type="text" id="seaText">
+                <input type="submit" value=" " id="submBtn">
+                <div class="box_h" id="aHid">
+                    <a href="#">5G</a>
+                    <a href="#">荣耀9X</a>
+                </div>
+                <div class="box_search" id="seaHot">
+                    <p>热门搜索</p>
+                    <ul>
+                        <li><a href="#">nova 5i Pro</a></li>
+                        <li><a href="#">荣耀20i</a></li>
+                        <li><a href="#">nova 5 Pro</a></li>
+                        <li><a href="#">nova 5</a></li>
+                        <li><a href="#">HUAWEI P30</a></li>
+                        <li><a href="#">荣耀20</a></li>
+                        <li><a href="#">Mate 20 X (5G)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<section>
+    <div class="carousel">
+        <ul class="items">
+            <li class="item peak"><a href="#"><img src="images/华为广告图1.jpg" alt=""></a></li>
+            <li class="item"><a href="#"><img src="images/华为广告图2.jpg" alt=""></a></li>
+            <li class="item"><a href="#"><img src="images/华为广告图3.jpg" alt=""></a></li>
+            <li class="item"><a href="#"><img src="images/华为广告图4.jpg" alt=""></a></li>
+            <li class="item"><a href="#"><img src="images/华为广告图5.jpg" alt=""></a></li>
+            <li class="item"><a href="#"><img src="images/华为广告图6.jpg" alt=""></a></li>
+            <li class="item"><a href="#"><img src="images/华为广告图7.jpg" alt=""></a></li>
+            <li class="item"><a href="#"><img src="images/华为广告图8.jpg" alt=""></a></li>
+        </ul>
+        <ul class="dots">
+            <li class="dot check" data="0"></li>
+            <li class="dot" data="1"></li>
+            <li class="dot" data="2"></li>
+            <li class="dot" data="3"></li>
+            <li class="dot" data="4"></li>
+            <li class="dot" data="5"></li>
+            <li class="dot" data="6"></li>
+            <li class="dot" data="7"></li>
+        </ul>
+        <button class="btn" id="prev">&lt;</button>
+        <button class="btn" id="next">&gt;</button>
+    </div>
+    <div class="board">
+        <ul>
+            <li>
+                <div class="board_li">
+                    <div class="board_hot b1">
+                        <div class="board_hot_type">
+                            <a href="#">手机</a>
+                        </div>
+                        <a href="#">荣耀</a>
+                        <a href="#">HUAWEI P系列</a>
+                    </div>
+                    <div class="board_an">
+                        <ul>
+                            <li><a href="#"><img src="images/荣耀.png" alt=""><span>荣耀</span></a></li>
+                            <li><a href="#"><img src="images/HUAWEIP系列.png" alt=""><span>HUAWEI P系列</span></a></li>
+                            <li><a href="#"><img src="images/HUAWEIMate系列.png" alt=""><span>HUAWEI Mate系列</span></a>
+                            </li>
+                            <li><a href="#"><img src="images/荣耀畅玩系列.png" alt=""><span>荣耀畅玩系列</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><img src="images/荣耀.png" alt=""><span>荣耀</span></a></li>
+                            <li><a href="#"><img src="images/HUAWEIP系列.png" alt=""><span>HUAWEI P系列</span></a></li>
+                            <li><a href="#"><img src="images/HUAWEIMate系列.png" alt=""><span>HUAWEI Mate系列</span></a>
+                            </li>
+                            <li><a href="#"><img src="images/荣耀畅玩系列.png" alt=""><span>荣耀畅玩系列</span></a></li>
+                        </ul>
+                        <ul>
+                            <li class="all"><a href="#"><img src="images/查看全部.png" alt="">查看全部</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="board_li">
+                    <div class="board_hot b2">
+                        <div class="board_hot_type">
+                            <a href="#">笔记本 & 平板</a>
+                        </div>
+                        <a href="#">平板电脑</a>
+                        <a href="#">笔记本电脑</a>
+                    </div>
+                    <div class="board_an">
+                        <ul>
+                            <li><a href="#"><img src="images/平板电脑.png" alt=""><span>平板电脑</span></a></li>
+                            <li><a href="#"><img src="images/笔记本电脑.png" alt=""><span>笔记本电脑</span></a></li>
+                            <li><a href="#"><img src="images/笔记本配件.png" alt=""><span>笔记本配件</span></a></li>
+                            <li class="all"><a href="#"><img src="images/查看全部.png" alt="">查看更多</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="board_li">
+                    <div class="board_hot b3">
+                        <div class="board_hot_type">
+                            <a href="#">智能穿戴</a>
+                        </div>
+                        <a href="#">手环</a>
+                        <a href="#">手表</a>
+                        <a href="#">VR</a>
+                    </div>
+                    <div class="board_an">
+                        <ul>
+                            <li><a href="#"><img src="images/手环.png" alt=""><span>手环</span></a></li>
+                            <li><a href="#"><img src="images/手表.png" alt=""><span>手表</span></a></li>
+                            <li><a href="#"><img src="images/VR.png" alt=""><span>VR</span></a></li>
+                            <li class="all"><a href="#"><img src="images/查看全部.png" alt="">查看更多</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="board_li">
+                    <div class="board_hot b4">
+                        <div class="board_hot_type">
+                            <a href="#">智能家居 & 智慧屏</a>
+                        </div>
+                        <a href="#">智慧屏</a>
+                        <a href="#">路由器</a>
+                        <a href="#">照明</a>
+                    </div>
+                    <div class="board_an">
+                        <ul>
+                            <li><a href="#"><img src="images/智慧屏.png" alt=""><span>智慧屏</span></a></li>
+                            <li><a href="#"><img src="images/路由器.png" alt=""><span>路由器</span></a></li>
+                            <li><a href="#"><img src="images/照明.png" alt=""><span>照明</span></a></li>
+                            <li><a href="#"><img src="images/电视盒子.png" alt=""><span>电视盒子</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><img src="images/智慧屏.png" alt=""><span>智慧屏</span></a></li>
+                            <li><a href="#"><img src="images/路由器.png" alt=""><span>路由器</span></a></li>
+                            <li><a href="#"><img src="images/照明.png" alt=""><span>照明</span></a></li>
+                            <li><a href="#"><img src="images/电视盒子.png" alt=""><span>电视盒子</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><img src="images/智慧屏.png" alt=""><span>智慧屏</span></a></li>
+                            <li><a href="#"><img src="images/路由器.png" alt=""><span>路由器</span></a></li>
+                            <li><a href="#"><img src="images/照明.png" alt=""><span>照明</span></a></li>
+                            <li class="all"><a href="#"><img src="images/查看全部.png" alt="">查看更多</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="board_li">
+                    <div class="board_hot b5">
+                        <div class="board_hot_type">
+                            <a href="#">热销配件</a>
+                        </div>
+                        <a href="#">保护壳</a>
+                        <a href="#">移动电源</a>
+                        <a href="#">耳机</a>
+                    </div>
+                    <div class="board_an">
+                        <ul>
+                            <li><a href="#"><img src="images/保护壳.png" alt=""><span>保护壳</span></a></li>
+                            <li><a href="#"><img src="images/耳机.png" alt=""><span>耳机</span></a></li>
+                            <li><a href="#"><img src="images/保护套.png" alt=""><span>保护套</span></a></li>
+                            <li><a href="#"><img src="images/音箱.png" alt=""><span>音箱</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><img src="images/保护壳.png" alt=""><span>保护壳</span></a></li>
+                            <li><a href="#"><img src="images/耳机.png" alt=""><span>耳机</span></a></li>
+                            <li><a href="#"><img src="images/保护套.png" alt=""><span>保护套</span></a></li>
+                            <li><a href="#"><img src="images/音箱.png" alt=""><span>音箱</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><img src="images/保护壳.png" alt=""><span>保护壳</span></a></li>
+                            <li><a href="#"><img src="images/耳机.png" alt=""><span>耳机</span></a></li>
+                            <li><a href="#"><img src="images/保护套.png" alt=""><span>保护套</span></a></li>
+                            <li class="all"><a href="#"><img src="images/查看全部.png" alt="">查看更多</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="board_li">
+                    <div class="board_hot b6">
+                        <div class="board_hot_type">
+                            <a href="#">增值服务 & 其他</a>
+                        </div>
+                        <a href="#">AI计算平台</a>
+                        <a href="#">增值卡</a>
+                    </div>
+                    <div class="board_an">
+                        <ul>
+                            <li><a href="#"><img src="images/AI计算平台.png" alt=""><span>AI计算平台</span></a></li>
+                            <li><a href="#"><img src="images/增值卡.png" alt=""><span>增值卡</span></a></li>
+                            <li><a href="#"><img src="images/服务器.png" alt=""><span>服务器</span></a></li>
+                            <li><a href="#"><img src="images/电池服务.png" alt=""><span>电池服务</span></a></li>
+                        </ul>
+                        <ul>
+                            <li class="all"><a href="#"><img src="images/查看全部.png" alt="">查看更多</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<div class="main">
+    <div>
+        <div class="main_top">
+            <div class="main_top_up">
+                <ul>
+                    <li>
+                        <div class="up_left">
+                            <div class="up_left_img">
+                                <img src="images/头像.png" alt="">
+                            </div>
+                            <div class="up_left_info">
+                                <div class="prompt">
+                                    <span>您好！请</span>
+                                    <a href="#">登录</a>
+                                    <span>/</span>
+                                    <a href="#">注册</a>
+                                </div>
+                                <div class="link">
+                                    <a href="#">新人福利</a>
+                                    <a href="#">会员频道</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="up_center">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="up_center_img i1"></div>
+                                        <div>企业购特惠</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="up_center_img i2"></div>
+                                        <div>会员领劵</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="up_center_img i3"></div>
+                                        <div>以旧换新</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="up_center_img i4"></div>
+                                        <div>nova5新品</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="up_center_img i5"></div>
+                                        <div>荣耀数码</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="up_center_img i6"></div>
+                                        <div>华为数码</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="up_right">
+                            <div class="up_right_notice">
+                                <div class="notice">
+                                    <a href="#">公告</a>
+                                </div>
+                                <div class="cycle">
+                                    <ul class="infos">
+                                        <li class="info h"><a href="#">火鸡电磁炉套装众测抽P30 Pro活动中奖名单</a></li>
+                                        <li class="info"><a href="#">华为商城会员线下权益需求调研中奖结果</a></li>
+                                        <li class="info"><a href="#">第三方商品购买满意度调研中奖结果</a></li>
+                                        <li class="info"><a href="#">华为商城8月新人见面礼</a></li>
+                                        <li class="info"><a href="#">荣耀专区8月活动公告</a></li>
+                                        <li class="info"><a href="#">火鸡电磁炉套装众测抽P30 Pro活动中奖名单</a></li>
+                                        <li class="info"><a href="#">中华有为</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="up_right_jump">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span class="span_img m1"></span>
+                                            <span class="span_text">优购码</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="span_img m2"></span>
+                                            <span class="span_text">实名认证</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="span_img m3"></span>
+                                            <span class="span_text">补购保障</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="main_top_down">
+                <ul>
+                    <li><a href="#"><img src="images/01.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/02.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/03.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/04.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main_center">
+            <div class="main_center_top">
+                <div>
+                    <h2>热销单品</h2>
+                </div>
+                <div class="img_left">
+                    <a href="#"><img src="images/长图01.jpg" alt=""></a>
+                </div>
+                <div class="img_right">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <p><img src="images/售卖01.png" alt=""></p>
+                                <p>荣耀9X PRO</p>
+                                <p>订金宋耳机 尾款享6期免息</p>
+                                <p>￥2199</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p><img src="images/售卖02.png" alt=""></p>
+                                <p>HUAWEI P30</p>
+                                <p>赠好礼|享6期免息</p>
+                                <p>￥3988</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p><img src="images/售卖03.png" alt=""></p>
+                                <p>荣耀20 PRO</p>
+                                <p>享多重好礼</p>
+                                <p>￥3199</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p><img src="images/售卖04.png" alt=""></p>
+                                <p>HUAWEI nova 5</p>
+                                <p>赠好礼|享6期免息</p>
+                                <p>￥2799</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p><img src="images/售卖01.png" alt=""></p>
+                                <p>HUAWEI nova 5</p>
+                                <p>赠好礼|享6期免息</p>
+                                <p>￥2799</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p><img src="images/售卖02.png" alt=""></p>
+                                <p>荣耀20 PRO</p>
+                                <p>享多重好礼</p>
+                                <p>￥3199</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p><img src="images/售卖03.png" alt=""></p>
+                                <p>HUAWEI P30</p>
+                                <p>赠好礼|享6期免息</p>
+                                <p>￥3988</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p><img src="images/售卖04.png" alt=""></p>
+                                <p>荣耀9X PRO</p>
+                                <p>订金宋耳机 尾款享6期免息</p>
+                                <p>￥2199</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main_center_down">
+                <div>
+                    <h2>精品推荐</h2>
+                </div>
+                <div class="goods">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p><img src="images/精品推荐01.png" alt=""></p>
+                                    <p>新品上市 享3期免息</p>
+                                </div>
+                                <p>华为平板 M6 10.8英寸</p>
+                                <p>￥2299</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p><img src="images/精品推荐02.png" alt=""></p>
+                                    <p>高清全面屏</p>
+                                </div>
+                                <p>荣耀 MagicBook Pro</p>
+                                <p>￥5499</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p><img src="images/精品推荐03.png" alt=""></p>
+                                    <p>仲夏紫独家发售</p>
+                                </div>
+                                <p>HUAWEI FreeLace 无线耳机</p>
+                                <p>￥499</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p><img src="images/精品推荐04.png" alt=""></p>
+                                    <p>新品火热开售</p>
+                                </div>
+                                <p>荣耀手环 5</p>
+                                <p>￥189</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p><img src="images/精品推荐05.png" alt=""></p>
+                                    <p>下单最高优惠 100</p>
+                                </div>
+                                <p>HUAWEI WATCH GT</p>
+                                <p>￥1288</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p><img src="images/精品推荐01.png" alt=""></p>
+                                    <p>新品火热开售</p>
+                                </div>
+                                <p>荣耀手环 5</p>
+                                <p>￥189</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p><img src="images/精品推荐02.png" alt=""></p>
+                                    <p>下单最高优惠 100</p>
+                                </div>
+                                <p>HUAWEI WATCH GT</p>
+                                <p>￥1288</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p><img src="images/精品推荐03.png" alt=""></p>
+                                    <p>仲夏紫独家发售</p>
+                                </div>
+                                <p>HUAWEI FreeLace 无线耳机</p>
+                                <p>￥499</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p><img src="images/精品推荐04.png" alt=""></p>
+                                    <p>高清全面屏</p>
+                                </div>
+                                <p>荣耀 MagicBook Pro</p>
+                                <p>￥5499</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p><img src="images/精品推荐05.png" alt=""></p>
+                                    <p>新品上市 享3期免息</p>
+                                </div>
+                                <p>华为平板 M6 10.8英寸</p>
+                                <p>￥2299</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main_bottom">
+            <ul class="wides">
+                <li class="wide ig"><a href="#"><img src="images/宽图01.jpg" alt=""></a></li>
+                <li class="wide"><a href="#"><img src="images/宽图02.png" alt=""></a></li>
+                <li class="wide"><a href="#"><img src="images/宽图03.jpg" alt=""></a></li>
+                <li class="wide"><a href="#"><img src="images/宽图04.png" alt=""></a></li>
+                <li class="wide"><a href="#"><img src="images/宽图05.jpg" alt=""></a></li>
+                <li class="wide"><a href="#"><img src="images/宽图06.jpg" alt=""></a></li>
+                <li class="wide"><a href="#"><img src="images/宽图07.jpg" alt=""></a></li>
+                <li class="wide"><a href="#"><img src="images/宽图08.jpg" alt=""></a></li>
+                <li class="wide"><a href="#"><img src="images/宽图09.jpg" alt=""></a></li>
+            </ul>
+            <ul class="wideDots">
+                <li class="wideDot wd" mainData="0"></li>
+                <li class="wideDot" mainData="1"></li>
+                <li class="wideDot" mainData="2"></li>
+                <li class="wideDot" mainData="3"></li>
+                <li class="wideDot" mainData="4"></li>
+                <li class="wideDot" mainData="5"></li>
+                <li class="wideDot" mainData="6"></li>
+                <li class="wideDot" mainData="7"></li>
+                <li class="wideDot" mainData="8"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="funny">
+    <div>
+        <div>
+            <span><a href="https://www.vmall.com/" target="_blank">华为商城官网原网</a></span>
+        </div>
+        <div>
+            <img src="images/滑稽.gif" alt="">
+            <p>此处省略N个版块</p>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="couple">
+        <a href="#"><img src="images/新人见面礼.jpg" alt=""></a>
+    </div>
+    <div>
+        <div class="sales">
+            <ul>
+                <li><a href="#"><i></i><span>百强企业 品质保证</span></a></li>
+                <li><a href="#"><i></i><span>7天退货 15天换货</span></a></li>
+                <li><a href="#"><i></i><span>48元起免运费</span></a></li>
+                <li><a href="#"><i></i><span>1000家维修网点 全国联保</span></a></li>
+            </ul>
+        </div>
+        <div class="service">
+            <img src="images/底部服务.png" alt="">
+        </div>
+        <div class="side">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    </div>
+</footer>
+<script src="js/nav.js"></script>
+<script src="js/section-board.js"></script>
+<script src="js/section-banner.js"></script>
+<script src="js/main-wides.js"></script>
+<script src="js/main-infos.js"></script>
+</body>
+</html>
